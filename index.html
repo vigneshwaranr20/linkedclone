@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	 <script>
+	 	$ (function()
+	 	{
+		  		$("#edit1").click (function()
+		  		{
+		  			
+		  			
+		  			$("#staticBackdrop").show(1000);
+		  		});
+		  		$("#close").click (function()
+		  		{
+		  			$("#staticBackdrop").hide(1000);
+		  		});
+		 });
+	  </script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="C:\Users\SM - Trainee\Desktop\linkedin\style.css">
+	<title>LinkedIn</title>
+
+
+</head>
+<body>
+	
+							   <div class="header">
+								   	<div class="headericon">
+								   	  	<img src="C:/Users/SM - Trainee/Downloads/linkedin.png">
+								   	   <div class="headersearch">
+								   	   		<i class="material-icons"> search </i>
+							            <input type="text"placeholder="search" />
+								   	   </div>
+								    </div>
+								   <div class="header_right">
+							        <div class="headerOption">
+							          <i class="material-icons headerOption__icon"> home </i>
+							          <p>Home</p>
+							        </div>
+							        <div class="headerOption">
+							          <i class="material-icons headerOption__icon"> supervisor_account </i>
+							          <p>My Network</p>
+							        </div>
+							        <div class="headerOption">
+							          <i class="material-icons headerOption__icon"> business_center </i>
+							          <p>Jobs</p>
+							        </div>
+							        <div class="headerOption">
+							          <i class="material-icons headerOption__icon"> chat </i>
+							          <p>Messaging</p>
+							        </div>
+							        <div class="headerOption">
+							          <i class="material-icons headerOption__icon"> notifications </i>
+							          <p>Notifications</p>
+							        </div>
+							        <div class="headerOption">
+							          <i class="material-icons headerOption__icon"> account_circle </i>
+							          <p>Me</p>
+							        </div>
+							        <hr>
+							        <br> 	
+							        <div class="headerOption">
+							          <i class="material-icons headerOption__icon">apps</i>
+							          <p >Works</p>
+							        </div>
+							       <div class="headerOption">
+							       	  <p><u> Try Premium for free</u></p> 
+							       </div>  
+							     </div>
+							   </div>
+	<div class="container">
+		                    <!--  container -->
+		<div class="coverimage">
+			                   <!-- cover image -->
+	   								<img src="https://wallpaperaccess.com/full/1459088.jpg">
+	   							<div class="profileimage">
+	   								<img src="C:/Users/SM - Trainee/Downloads/9943291196.jpg">
+	   							</div>
+						   		<div class="profiledetails">
+											   			<div class="profileedit"> 
+																												   	 			<!-- Button trigger modal -->
+																	<button type="button" class="profileedit" id="edit1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+																	  <span class="material-icons">create</span>
+																	</button>
+																	<!-- Modal -->
+																	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+																	  <div class="modal-dialog modal-dialog-scrollable">
+																	    <div class="modal-content">
+																	      <div class="modal-header">
+																	        <h5 class="modal-title" id="staticBackdropLabel">Edit intro</h5>
+																	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+																	      </div>
+																	      <div class="modal-body">
+																	        <p>*indicates required</p><br>
+																	        <label>First name<sup>*</sup></label><br>
+																	        <input type="text" class="edit-box" id="first-name" placeholder="First name"><br>
+																	        <label>Last name<sup>*</sup></label><br>
+																	        <input type="text" class="edit-box" id="last-name" placeholder="Last name"><br>
+																	         <label>Additional name</label><br>
+																	        <input type="text" class="edit-box" id="additional-name" placeholder="Additional name"><br>
+																	        <p style="height: 0px;">Name pronounciation</p><br>
+																	        <span class="material-icons">info</span>
+																	        <p>This can only be added using our mobile app</p>
+																	        <label>Pronouns</label>
+																	          <input list="pronouns" name="please select" />
+																	          <datalist id="pronouns">
+																	            <option value="Please Select" placeholder = "Please select	">
+																	            <option value="She/Her">
+																	            <option value="He/Him">
+																	            <option value="They/them">
+																	            <option value="Custom">
+																	          </datalist>
+																	        <p>Let others know how to refer to you.</p><br>
+																	        <p style="height:6px">Learn more about <a href="#"> gender pronouns</a>.</p>
+																	        <label>Headlines<sup>*</sup></label><br>
+																	        <input type="text" class="edit-box" id="headlines" placeholder="Headlines">
+																	        <h3 style="height:0px">Current position</h3><br>
+																	        <a href="#">+ Add new position</a><br>
+																	        <label>Industry<sup>*</sup></label><br>
+																	        <input type="text" class="edit-box" id="industry" placeholder="Software Engineering">
+																	        <p>Learn more about <a href="#"> industry options</a>.</p>
+																	        <h3 style="height:0px">Education</h3><br>
+																	        <a href="#">+ Add new education</a>
+																	        <h3 style="height:0px">Location</h3><br>
+																	        <label>Country/Region<sup>*</sup></label><br>
+																	        <input type="text" class="edit-box" id="country" placeholder="India"><br>
+																	        <label>City</label><br>
+																	        <input type="text" class="edit-box" id="industry" placeholder="Karaikal , Puducherry">
+																	        <h3 style="height:0px">Contact info</h3><br>
+																	        <p>Add or edit your profile URL, email, and more</p>
+																	        <a href="#">Edit contact info</a>
+																	      </div>
+																	      <div class="modal-footer">
+																	        <button type="button" class="btn btn-secondary" id="close" data-bs-dismiss="modal"style="background-color: royalblue;">Save</button>
+																	      </div>
+																	    </div>
+																	  </div>
+																	</div>
+										        	</div>
+											   	 		<h2>Vigneshwaran R</h2>
+											   	 		<p>B Tech Mechanical Engineering</p>
+											   	 		<p>Karaikal, Puducherry, India <u style="color: #0A66C6;"> Contact info</u></p>
+											   	 		<p><u style="color: #0A66C6;"> 62 Connections </u></p><br>
+									</div>
+		   						<div class="buttonmain">
+		    						<button class="button1"type="button">Open To</button>
+		    					   <button type="button" class="button2" data-bs-toggle="modal" data-bs-target="#staticBackdrop1" class="add-profile">Add to profile section </button>
+						  <!-- Modal -->
+						  <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						  <div class="modal-dialog modal-dialog-scrollable">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="staticBackdropLabel">Add to profile</h5>
+						        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						      </div>
+						      <div class="modal-body">
+						          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseExample">Core</button>
+						            <div class="collapse" id="collapseOne">
+						             <div class="card card-body">
+						                <p>Start with the basics. Filling out these sections will help you be discovered by recruiters and people you may know</p><br>
+						                <p>Add about</p><br>
+						                <hr>
+						                <p>Add education</p><br>
+						                <hr>
+						                <p>Add position</p><br>
+						                <hr>
+						                <p>Add career break</p><br>
+						                <hr>
+						                <p>Add skill</p><br>
+						                <hr>
+						              </div>
+						            </div>
+						          <hr>
+						          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseExample">Recommended</button>
+						            <div class="collapse" id="collapseTwo">
+						             <div class="card card-body">
+						                <p>Completing these sections will increase your credibility and give you access to more opportunities</p><br>
+						                <p>Add featured</p><br>
+						                <hr>
+						                <p>Add licenses & certifications</p><br>
+						                <hr>
+						                <p>Add courses</p><br>
+						                <hr>
+						                <p>Add recommendations</p><br>
+						                <hr>
+						              </div>
+						            </div>
+						          <hr>
+						          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseExample">Additional</button>
+						            <div class="collapse" id="collapseThree">
+						             <div class="card card-body">
+						                <p>Add even more personality to your profile. These sections will help you grow your network and build more relationships.</p><br>
+						                <p>Add volunteer experience</p><br>
+						                <hr>
+						                <p>Add publications</p><br>
+						                <hr>
+						                <p>Add patents</p><br>
+						                <hr>
+						                <p>Add projects</p><br>
+						                <hr>
+						                <p>Add honors & awards</p><br>
+						                <hr>
+						                <p>Add test scores</p><br>
+						                <hr>
+						                <p>Add languages</p><br>
+						                <hr>
+						                <p>Add organizations</p><br>
+						                <hr>
+						                <p>Add causes</p><br>
+						                <hr>
+						                <p>Add contact info</p><br>
+						                <hr>
+						              </div>
+						            </div>
+						      </div>
+						    </div>
+						  </div>
+						  </div>
+
+
+		    						<button class="button3"type="button">more</button>
+		    					</div><br>
+							    <div class="navi">
+										<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+										  
+										  <div class="carousel-inner">
+										    <div class="carousel-item active" data-bs-interval="none">
+										      <button class="navi1">Open to work<br>Engineer roles<br><a href="#">See all details</a></button>
+										                     
+										    </div>
+										    <div class="carousel-item" data-bs-interval="none">
+										      <button class="navi2">Share that you’re hiring and attract qualified candidates.<br><a href="#">Get started</a></button>
+										                  
+										    </div>
+										    <div class="carousel-item">
+										      <button class="navi3">Showcase services you offer <br>so you and your business can be found in search.<a href="#">Get started</a></button>
+										                  
+										    </div>
+										  </div>
+										  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+										    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										    <span class="visually-hidden">Previous</span>
+										  </button>
+										  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+										    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+										    <span class="visually-hidden">Next</span>
+										  </button>
+										</div>
+							    </div><br>
+	           	</div>
+								 	<div class="analyticsicon">
+								 		<h2>Analytics</h2><br>
+								 		<div class="privateicon">
+								 			<span class="material-icons">visibility</span><br><p>private to you</p><br>	
+									  </div>
+									  <div class="key">
+									    	<span class="material-icons">people</span><p>10 people views<br>discovers Who's viewed your profile</p>
+									    	<br>  
+							          <span class="material-icons">search</span><p>1 search appearance<br>see how often you appear in search results</p>
+							      </div> 
+							    </div>
+							           <!-- right side -->
+		        <div class="righticon">
+				            <div class="sideicon1">
+				      					<p> Edit Your Profile & URL </p>
+				      					<i class="material-icons">help</i>
+				      			</div><hr>
+				      			<div class="sideicon2">
+				      			      <p>Add profile in another Language </p>
+				      	          <i class="material-icons">help</i>
+				      			</div>
+				      			<div class="suggestconnection">
+				      				<h2>People also viewed</h2>
+				      				<div class="person1">
+				      					<img src="https://media.licdn.com/dms/image/C4D03AQGK_gTF_7HC9A/profile-displayphoto-shrink_100_100/0/1653467787511?e=1680739200&v=beta&t=VxWNKcq_6ep0Q_uW8IrRtRw98_J4ct-KNkg1VK3MvqE">
+				      					<h4>Adhithyan Srinivasan</h4>
+			      	    			<p>Design Engineer | Eaton power quality private limited</p>
+			      	    			<button id="follow1" onclick="follow(this.id,this.innerText)" style="margin: auto;margin-bottom: -25px;margin-left: -255px;border-radius: 10px; padding: 3px;cursor: pointer;background-color: #00A6FF;">Follow</button>
+		      		        </div>
+		      		        <br><hr>
+		      		        <div class="person2">
+		      		        	<img src="https://media.licdn.com/dms/image/C5603AQH6PFZKqh2JSw/profile-displayphoto-shrink_100_100/0/1656411634502?e=1680739200&v=beta&t=YArUMm4ZgwYOn3uB6zpjrAdyN8QYRPTMZ5mBtsEcliM">
+		      		        	<h4>Indhumathi K </h4>
+		      		        	<p>Software Engineer at LTImindtree</p>
+		      		        	<button id="follow2" onclick="follow(this.id,this.innerText)" style="margin: auto;margin-bottom: -25px;margin-left: -255px;border-radius: 10px; padding: 3px;cursor: pointer;background-color: #00A6FF;">Follow</button>
+		      		        </div>
+		      		        <br><hr>
+		      		        <div class="person3">
+		      		        	<img src="https://media.licdn.com/dms/image/C5603AQG9sw4qbwS0yw/profile-displayphoto-shrink_100_100/0/1613220043140?e=1681344000&v=beta&t=lBEs79BgMRmZ2MC26WFWv_X3FoOTS9oj4vJ7JsqKzKg">
+		      		        	<h4>Manikandan M </h4>
+		      		        	<p>Studied at Alpha Engineering and Technology</p>
+		      		        	<button id="follow3" onclick="follow(this.id,this.innerText)" style="margin: auto;margin-bottom: -25px;margin-left: -255px;border-radius: 10px;padding: 3px;cursor: pointer;background-color: #00A6FF;">Follow</button>
+		      		        </div>
+		      		        <br><hr>	
+		                  <div class="person4">
+		      		        	<img src="https://media.licdn.com/dms/image/C5603AQFRirzj8AnG6A/profile-displayphoto-shrink_100_100/0/1603863142594?e=1681344000&v=beta&t=PhJ6GjSQ4XUQlIHrdxndbNxf_YS97yo3ADrU5KI6yak">
+		      		        	<h4>Ilakkiya Sri </h4>
+		      		        	<p>Studied at Alpha Engineering and Technology</p>
+		      		        	<button id="follow4" onclick="follow(this.id,this.innerText)"style="margin: auto;margin-bottom: -25px;margin-left: -255px;border-radius: 10px;padding: 3px;cursor: pointer;background-color: #00A6FF;">Follow</button>
+		      		        </div>
+		      		        <br><hr>
+		      		        <div class="person5">
+		      		        	<img src="https://media.licdn.com/dms/image/D5603AQHB0At8Vesdhw/profile-displayphoto-shrink_100_100/0/1675751566030?e=1681344000&v=beta&t=SqRuFEkhBYs9K9r_vhdHyCbC6yr9fNhVblkVqpmHGn0">
+		      		        	<h4>Harish kumar </h4>
+		      		        	<p>Lead Engineer At HCL TECH</p>
+		      		        	<button id="follow5" onclick="follow(this.id,this.innerText)" style="margin: auto;margin-bottom: -25px;margin-left: -255px;border-radius: 10px;padding: 3px;cursor: pointer;background-color: #00A6FF;">Follow</button>
+		      		        </div>
+		      		        <br><hr>	
+
+				      	  </div> 
+				      	  <div class="resourcesicon">
+									 		<h2>Resources</h2>
+									 		<div class="privateicon1">
+									 			<span class="material-icons">visibility</span><br><p>private to you</p><br>	
+										  </div>
+										  <div class="key1">
+								    	<span class="material-icons">wifi</span><p>creator mode <b> Off </b><br>Get discovered, showcase content on your profile, and get access to creator tools</p>
+								      </div><hr>				    	
+								    	<div class="mynetwork">
+								    	<i class="material-icons mynetwork"> supervisor_account </i> <b>My Network</b>
+								    	<p>See and manage your connections and interests.</p>
+								      </div><hr>
+								      <div class="mynetwork1">
+								      <p>Show All 5 Resources <span class="material-icons">arrow_forward</span></p>
+								      </div>	
+						     	</div>
+						     	<div class="about">
+						     		  <h2>About</h2>
+						     		  <div class="aboutedit">
+						     		  <i class="material-icons aboutedit">create</i>
+						     		  <p>“Don't settle for average. Bring your best to the moment. Then, whether it fails or succeeds, at least you know you gave all you had.” —Angela Bassett</p>
+						     	    </div>
+						     	</div>
+						     	<div class="activity">
+						     	    <h2>Activity</h2>
+						     	    <div style="color: royalblue;margin-left: 21px;">61 followers </div> 
+						     	    <div class="activitybutton">
+						     	    <button class="activitybutton1"type="button">start a post</button>
+						     	    <p>Vigneshwaran R commented on a post • 1mo <i class="material-icons activitybutton2"> supervisor_account </i></p>
+						     	    <p>congrats SEDHURAMAN</p>
+						     	    </div><hr>
+						     	    <div class="showactivity">
+								      <p>Show All Activity <span class="material-icons">arrow_forward</span></p>
+								      </div>
+								  </div>
+								  <div class="Education">
+									  		<h2>Education</h2>
+									      <div class="Education1">
+									      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="margin-left: 689px;">
+									      <i class="material-icons Education1">create</i>
+									      <p><b>Alpha College Of Enginering And Technology</b></p>
+									      <p><b>Bachelor Of Technology , Mechanical Engineering</b></p>
+									      <p><b>2015-2019</b></p>
+								      	</div>				      	
+								  </div> 
+								  <div class="skills">
+							  	   <h2>Skills</h2>
+							  	  <div class="skills1"> 
+							  	  <p><b>Jenkins</b><hr> 
+							  	  <p><b>Docker</b></p><hr>
+							  	  <p><b>Ansible</b></p><hr>
+							  	  <p><b>Ansible</b></p><hr>
+							  	  </div>	
+							  	  <div class="skills2">
+							  	  	<button class="skills3"type="button">Take skils quiz</button>
+							  	  </div>
+							  	  <div class="skills4">
+							  	    <i class="material-icons Education1">create</i>
+							  	  </div> 
+							  	  <div class="skills5">
+							  	  	<p>Show All 13 Skills <span class="material-icons">arrow_forward</span></p>
+							  	  </div>
+							    </div>
+							    <div class="suggestforu">
+							    	 <h2>Suggested for you</h2>
+							    	<div class="suggesteye">
+									 			<span class="material-icons">visibility</span><br><p>private to you</p><br>	
+										</div>
+										<div class="progressicon"> 
+											  <h4>Intermediate</h4>
+										    <progress id="bar" max="100" value="85.71"></progress>5/7
+                        <h5>Complete 2 steps to achieve</h5>
+                        <!-- <button>All Stars</button> -->
+                        <button type="button" class="all-star" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                                    All stars            
+                                  </button>
+                                  <!-- Modal -->
+                                  <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h3 class="modal-title" id="staticBackdropLabel">Profile status</h3>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          
+                                          <p>Profile level shows how complete your profile is. Complete the recommended sections and build toward achieving your professional goals.</p>
+                                          <!-- <form id="myForm">
+                                          <input type="text"  tabindex="1" maxlength="20" onkeyup="myFunction(this,this.value)"></form> -->  
+                                          <h4>&#8226; Beginner</h4>
+                                          <p>All members start off as beginners and completing 4 sections will help you advance to Intermediate.</p>
+                                          <h4>&#8226;Intermediate</h4>
+                                          <p>Members with intermediate profiles see more relevant job recommendations and refined connection suggestions. Complete 4 sections to achieve Intermediate.</p>
+                                          <h4>&#8226;All-star</h4>
+                                          <p>Members with All-star profiles see more relevant feed updates and receive more profile views. Complete 7 sections to achieve All-star.</p>                                    
+                                        </div>
+                                        <!-- <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"style="background-color: royalblue;">Save</button>
+                                        </div> -->
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                        <br><hr>
+                    </div>
+                    <div class="summery">
+                    	<img src="https://img.icons8.com/office/256/parse-from-clipboard.png">
+                    	 <h5>Write a summary to highlight your personality or work experience</h5>
+                    	 <p>Members who include a summary receive up to 3.9 times as many profile views.</p>
+                    	 <!-- <button class="summery1">Add a Summary</button> -->
+                    	 <button type="button" class="summery1" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                                    <span class="material-icons1">Add a Summary</span>
+                                  </button>
+                                  <!-- Modal -->
+                                  <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable">
+                                      <div class="modal-content" >
+                                        <div class="modal-header">
+                                          <!-- <h5 class="modal-title" id="staticBackdropLabe2">Add summary</h5> -->s
+                                          <h2>Add summary</h2>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                        	
+                                          <h4 style="margin-left: 100px;">Let’s add your summary</h4>
+                                          <p>*indicates required</p><br>
+                                          <p>You can write about your years of experience, industry, or skills. People also talk about their achievements or previous job experiences.</p>
+                                          <form id="myForm">
+                                          <input id="myForm1" type="text"  tabindex="1" maxlength="20" onkeyup="myFunction(this,this.value)"></form>                                         
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"style="background-color: royalblue;">Save</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                    </div>    
+			      </div> 
+	</div>
+	        <script>
+			       	   function follow(paraid,paravalue)
+			       	   {
+			       	   	   debugger;
+			       	   	   console.log(paraid);
+			       	   	if(paravalue=="Follow")
+			       	   	{
+			       	   		document.getElementById(paraid).innerHTML="Unfollow";
+			       	   	}
+			       	      else
+			       	      {
+			       	      	document.getElementById(paraid).innerHTML="Follow";
+			       	      }
+			       	   }
+          </script>
+          <script>
+									function myFunction(x, y) {
+									  if (y.length == x.maxLength) {
+									    var next = x.tabIndex;
+									    if (next < document.getElementById("myForm").length) {
+									      document.getElementById("myForm").elements[next].focus();
+									    }
+									  }
+									}
+					</script>		      
+</body>
+</html>
